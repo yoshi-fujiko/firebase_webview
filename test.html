@@ -12,6 +12,7 @@
 
 <ul>
     <li><a href="#" id="event1">event1</a></li>
+    <li><a href="#" id="event2">event2</a></li>
 </ul>
 
 <script>
@@ -98,7 +99,7 @@ document.getElementById("event1").addEventListener("click", function() {
 
 document.getElementById("event2").addEventListener("click", function() {
   console.log("event2");
-    logEvent("event2", { size: 123.456 });
+    logEvent("screen_view", { screenClass: location.href, screenName: document.title, screenId: Math.round( Math.random()*100 ) });
 });
 
 document.getElementById("userprop").addEventListener("click", function() {
