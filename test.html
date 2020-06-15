@@ -120,6 +120,9 @@ document.getElementById("userprop").addEventListener("click", function() {
     console.log("userprop");
     setUserProperty("userprop", "custom_value");
 });
+
+logEvent("page_view", { "page_location": location.href + "_PV"});
+logEvent("screen_view", { "page_location": location.href + "_SV"});
 </script>
 
 </body>
