@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<h1>TEST-webview-v1.1</h1>
+<h1>TEST-webview-v1.2</h1>
 
 
 <ul>
@@ -122,7 +122,7 @@ document.getElementById("userprop").addEventListener("click", function() {
 });
 
 logEvent("page_view", { "page_location": location.href + "_PV"});
-logEvent("screen_view", { "page_location": location.href + "_SV"});
+logEvent("screen_view", { "screenClass": location.href + "_SV", screenName: document.title + "_SV"});
 </script>
 
 </body>
